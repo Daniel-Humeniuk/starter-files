@@ -8,3 +8,60 @@
 body {
     font-family: "Mulish", sans-serif;
 }
+
+.hero {
+    background-image: url(../img/pexels-tkirkgoz-19214764.webp);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    padding: 2rem;
+    max-width: 70ch;
+}
+
+section:has(>.outer-container) {
+    background-color: red;
+}
+
+.outer-container section {
+    display: flex;
+    border: 1px solid var(--mist);
+}
+
+.outer-container section > * {
+    flex-basis: 50%;
+}
+
+.outer-container section > *:last-of-type {
+    padding: 1rem;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media(min-width: 690px) {
+    .outer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .outer-container {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    h2 {
+        width: 100%;
+    }
+}
