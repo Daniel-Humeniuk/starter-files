@@ -1,0 +1,16 @@
+header {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: lightsalmon;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}

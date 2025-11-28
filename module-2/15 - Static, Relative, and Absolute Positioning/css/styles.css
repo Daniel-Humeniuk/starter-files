@@ -6,4 +6,33 @@
 
 body {
     font-family: "Work Sans", sans-serif;
+    margin: 1rem;
+}
+
+.gallery {
+    background-color: var(--black);
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.gallery div {
+    border: 2px solid var(--white);
+    width: 60%;
+}
+
+.gallery div:first-of-type {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.gallery div:last-of-type {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.gallery div:first-of-type:hover {
+    z-index: 5;
 }

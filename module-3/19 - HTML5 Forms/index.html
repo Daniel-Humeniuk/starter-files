@@ -1,25 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>18 - Goofle Support</title>
-
+ 
+    <title>19 - HTML5 Forms</title>
+ 
     <!-- Additional Information -->
     <meta name="author" content="">
     <meta name="description" content="">
-
+ 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-
+ 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+ 
 <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <div class="container">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <title>Google Logo</title>
+                    <path
+                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                </svg>
+            </a>
+            <nav>
+                <a href="">Get Help</a>
+                <a href="">Gift Card Shop</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <h1>Get Technical Support</h1>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="ex. Jack Pott" pattern="^[A-Z][a-z]+ [A-Z][a-z]+$">
+                        </div>
+ 
+                        <div>
+                            <label for="dob">Date Of Birth</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+                    </fieldset>
+                    <fieldset class="dont-flex">
+                        <legend>Sex On Your Id</legend>
+                        <div>
+                            <input type="radio" name="Sex" id="female" value="F">
+                            <label for="female">Female</label>
+                        </div>
+ 
+                        <div>
+                            <input type="radio" name="Sex" id="male" value="M">
+                            <label for="male">Male</label>
+                        </div>
+ 
+                        <div>
+                            <input type="radio" name="Sex" id="unspecified" value="X">
+                            <label for="unspecified">Unspecified</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="hello@example.com" autocomplete="email">
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="phone-help" autocomplete="tel">
+                            <p id="phone-help" class="help">Please use the following format: 333-444-5555</p>
+                            
+                        </div>
+                        <div>
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="address" autocomplete="street-address">
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="ex. Jack Pott" autocomplete="address-level2">
+                        </div>
+                        <div>
+                            <label for="province">Province or Territory</label>
+                            <select name="province" id="province">
+                                <option value="">-- Please choose an option: --</option>
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="YK">Yukon</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="postal">Postal Code</label>
+                            <input type="text" id="postal" name="postal" placeholder="A1A 1A1" pattern="[A-Z][0-9][A-Z]+ [0-9][A-Z][0-9]" aria-describedby="postal-help" autocomplete="postal-code">
+                            <p id="postal-help" class="help">Please use the following format: A1A 1A1</p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Online Banking Information</legend>
+                        <div>
+                            <label for="website">Your Banking Website</label>
+                            <input type="url" id="website" name="website" placeholder="https://www.somebank.ca">
+                        </div>
+                        <div>
+                            <label for="account">Account Number</label>
+                            <input type="number" id="account" name="account">
+                        </div>
+                        <div>
+                            <label for="password">Account Password</label>
+                            <input type="text" id="password" name="password">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Verification</legend>
+                        <div>
+                            <label for="secret">What is your darkest secret?</label>
+                            <textarea name="secret" id="secret" aria-describedby="secret-help"></textarea>
+                            <p id="secret-help" class="help">Don't worry: we won't use this for nefarious purposes like blackmail or anything. Trust us.</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="agree" id="agree" value="yes">
+                            <label for="agree">I hereby agree for my data to be stored in a server from Nigeria</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="submit" value="Submit" name="sign-up-btn">
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
 </body>
+ 
 </html>

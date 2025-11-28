@@ -5,3 +5,28 @@
     --black: #212121;
     --red: #c0232a;
 }
+
+section {
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    margin-top: 2rem;
+}
+
+article {
+    padding: 1rem;
+}
+
+section > *:last-child {
+    padding: 1rem;
+    flex-basis: 60%;
+    flex-shrink: 0;
+}
+
+@media(min-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+
+    /* get sections into a row */
+}

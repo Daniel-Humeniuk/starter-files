@@ -14,3 +14,55 @@ body {
 header svg {
     width: 2rem;
 }
+
+form {
+    background-color: var(--form-bg);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+legend {
+    font-size: 2.25rem;
+    font-weight: 100;
+    padding: 0;
+}
+
+fieldset:not(.dont-flex),
+fieldset:not(.dont-flex) div:not(.dont-flex) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+}
+
+.help {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    opacity: 0.65;
+}
+
+@media(min-width: 800px) {
+    fieldset:not(.dont-flex) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    fieldset:not(.dont-flex) div:not(.dont-flex) {
+        flex: 0 1 48%;
+    }
+}

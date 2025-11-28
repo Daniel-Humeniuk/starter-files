@@ -9,3 +9,98 @@ body {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
 }
+
+header {
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.expanded {
+    visibility: visible;
+    max-height: unset;
+    opacity: 1;
+}
+
+nav {
+    top: 100%;
+    position: absolute;
+    background-color: white;
+    box-shadow: var(--shadow);
+    left: 0;
+    right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--hover);
+}
+
+nav ul {
+    padding: 0 1.5rem;
+}
+
+nav span {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+@media(min-width: 700px) {
+    .toggle-btn {
+        display: none;
+    }
+
+    nav.collapsed {
+        position: unset;
+        max-height: unset;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    nav {
+        box-shadow: unset;
+    }
+
+    nav > ul {
+        display: flex;
+        padding: 0;
+    }
+
+    nav span {
+        transform: rotate(90deg);
+    }
+
+    .dropdown ul {
+        position: absolute;
+        box-shadow: var(--shadow);
+        background-color: white;
+    }
+
+    .dropdown:hover span {
+        transform: rotate(180deg);
+    }
+}

@@ -28,26 +28,63 @@
 			
 			<p class="lead">An accordion component is a user interface (UI) element that you've likely come across before. It's named after the musical instrument because segments of it will expand and collapse just like the bellows of a real accordion.</p>
 
-			<h2>What is an accordion component?</h2>
+			<section class="accordion-item">
+				<div class="accordion-header toggle-btn">
+					<h2>
+						<button>
+							What is an accordion component?
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<title>Toggle Item Visibility</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+							</svg>
+						</button>
+					</h2>
+				</div>
+				<div class="accordion-content collapsed">
+					<p>An accordion component has multiple sections or panels that can expand or collapse when clicked or tapped by the user.</p>
+					<p>With most accordion components, only one section can be expanded or collapsed at a time. This requires a little more JavaScript than we currently know, but the logic would go something like this: when the clicks on a closed section, the script checks to see if anything else is open; if there is, it closes it, then opens the selected section.</p>
+				</div>
+			</section>
 
-			<p>An accordion component has multiple sections or panels that can expand or collapse when clicked or tapped by the user.</p>
 
-			<p>With most accordion components, only one section can be expanded or collapsed at a time. This requires a little more JavaScript than we currently know, but the logic would go something like this: when the clicks on a closed section, the script checks to see if anything else is open; if there is, it closes it, then opens the selected section.</p>
+			<section class="accordion-item">
+				<div class="accordion-header toggle-btn">
+					<h2>
+						<button>
+						Why use an accordion component?
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<title>Toggle Item Visibility</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+							</svg>
+						</button>
+					</h2>
+				</div>
+				<div class="accordion-content collapsed">
+					<p>Accordion components can be a great use of space. By reducing the visual 'clutter', we can keep our users from being overwhelmed by looking at too many things at once. This is a technique called 'progressive disclosure', where information is gradually revealed as needed.</p>
+					<p>Also, remember that most users will want to skim your content, not read every word. This lets them skip over things that they may not need to read without having to endlessly scroll for the things that they're looking for.</p>
+				</div>
+			</section>
 
-
-			<h2>Why use an accordion component?</h2>
-
-			<p>Accordion components can be a great use of space. By reducing the visual 'clutter', we can keep our users from being overwhelmed by looking at too many things at once. This is a technique called 'progressive disclosure', where information is gradually revealed as needed.</p>
-
-			<p>Also, remember that most users will want to skim your content, not read every word. This lets them skip over things that they may not need to read without having to endlessly scroll for the things that they're looking for.</p>
-
-			<h2>What rules are there about accordion components?</h2>
-
-			<ul>
-				<li>We always need to make sure that anything within an accordion is <strong>accessible</strong> to all users. We can do this by using semantic elements like buttons and headings, with ARIA attributes as needed.</li>
-				<li>We also need to make sure that accordions behave appropriately on <strong>mobile devices</strong>. This means we need to avoid hover states and instead rely on click (or tap) events for the main functionality of the component.</li>
-				<li>Finally, we should always make sure that our code and animations are optimised for <strong>smooth performance</strong>. This means that we should keep our document structure as simple as possible and make sure that our users do not have to wait too long for our animations to finish before they're able to engage with the content.</li>
-			</ul>
+			<section class="accordion-item">
+				<div class="accordion-header toggle-btn">
+					<h2>
+						<button>
+						What rules are there about accordion components?
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<title>Toggle Item Visibility</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+							</svg>
+						</button>
+					</h2>
+				</div>
+				<div class="accordion-content collapsed">
+					<ul>
+						<li>We always need to make sure that anything within an accordion is <strong>accessible</strong> to all users. We can do this by using semantic elements like buttons and headings, with ARIA attributes as needed.</li>
+						<li>We also need to make sure that accordions behave appropriately on <strong>mobile devices</strong>. This means we need to avoid hover states and instead rely on click (or tap) events for the main functionality of the component.</li>
+						<li>Finally, we should always make sure that our code and animations are optimised for <strong>smooth performance</strong>. This means that we should keep our document structure as simple as possible and make sure that our users do not have to wait too long for our animations to finish before they're able to engage with the content.</li>
+					</ul>
+				</div>
+			</section>
 		</section>
 	</body>
 

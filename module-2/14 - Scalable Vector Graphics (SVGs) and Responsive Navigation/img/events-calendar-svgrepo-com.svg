@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 452.986 452.986" style="enable-background:new 0 0 452.986 452.986;" xml:space="preserve">
-
-		<g>
-			<path style="fill:#010002;" d="M404.344,0H48.642C21.894,0,0,21.873,0,48.664v355.681c0,26.726,21.894,48.642,48.642,48.642
-				h355.702c26.726,0,48.642-21.916,48.642-48.642V48.664C452.986,21.873,431.07,0,404.344,0z M148.429,33.629h156.043v40.337
-				H148.429V33.629z M410.902,406.372H42.041v-293.88h368.86V406.372z"/>
-			<rect x="79.273" y="246.23" width="48.642" height="48.664"/>
-			<rect x="79.273" y="323.26" width="48.642" height="48.642"/>
-			<rect x="160.853" y="169.223" width="48.621" height="48.642"/>
-			<rect x="160.853" y="246.23" width="48.621" height="48.664"/>
-			<rect x="160.853" y="323.26" width="48.621" height="48.642"/>
-			<rect x="242.369" y="169.223" width="48.664" height="48.642"/>
-			<rect x="242.369" y="246.23" width="48.664" height="48.664"/>
-			<rect x="242.369" y="323.26" width="48.664" height="48.642"/>
-			<rect x="323.907" y="169.223" width="48.664" height="48.642"/>
-			<rect x="323.907" y="246.23" width="48.664" height="48.664"/>
-		</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453 453" xml:space="preserve">
+    <path d="M404.3 0H48.6A49 49 0 0 0 0 48.7v355.6A49 49 0 0 0 48.6 453h355.7c26.8 0 48.7-22 48.7-48.7V48.7C453 21.9 431 0 404.3 0M148.4 33.6h156V74h-156zM411 406.4H42v-294h369z" fill="#010002"/>
+    <path d="M79.3 246.2h48.6v48.7H79.3zm0 77.1h48.6v48.6H79.3zm81.6-154.1h48.6v48.6h-48.6zm0 77h48.6v48.7h-48.6zm0 77.1h48.6v48.6h-48.6zm81.5-154.1h48.7v48.6h-48.7zm0 77h48.7v48.7h-48.7zm0 77.1h48.7v48.6h-48.7zm81.5-154.1h48.7v48.6h-48.7zm0 77h48.7v48.7h-48.7z"/>
 </svg>

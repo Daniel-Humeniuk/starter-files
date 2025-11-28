@@ -1,3 +1,72 @@
 body {
     color: #222;
+    font-family: "Roboto Flex", Arial, sans-serif;
+}
+h1, h2, h3, .btn {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+}
+article {
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    color: #222;
+}
+
+.scroll-window {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.scroll-window section {
+    width: 300px;
+    flex-shrink: 0;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 3px #eee;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scroll-window section div {
+    padding: 2rem;
+}
+
+.btn {
+    background-color: #222;
+    color: white;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: purple;
+    letter-spacing: 2px;
+}
+
+.scroll-window::-webkit-scrollbar {
+    background-color: #eee;
+    width: .5rem;
+    
+}
+
+.scroll-window::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: #666;
 }
